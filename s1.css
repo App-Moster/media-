@@ -1,0 +1,71 @@
+body
+{
+    background-color: lightblue;
+}
+div
+{
+   
+    text-align: center;
+    font-size: large;
+}
+div::after
+{
+    content: "This is a Media Quary Demo screen-size :  > 1440px";
+}
+
+@media screen and (max-width : 1440px)
+
+{
+    body
+    {
+       background-color: #39e344c4; 
+    }
+div::after
+{
+    content: "This is a Media Quary Demo screen-size : 1440px";
+    
+}
+
+    
+}
+@media screen and (max-width : 1040px)
+
+{
+    body
+    {
+       background-color: #dab31ac4; 
+    }
+    div::after
+{
+    content: "This is a Media Quary Demo screen-size : 1040px";
+    
+}
+    
+}
+@media screen and (max-width : 768px)
+
+{
+    body
+    {
+       background-color: #09c4edc4; 
+    }
+    div::after
+{
+    content: "This is a Media Quary Demo screen-size : 768px";
+    
+}
+}
+@media screen and (max-width : 425px)
+
+{
+    body
+    {
+       background-color: #cf400cc4; 
+    }
+    div::after
+{
+    content: "This is a Media Quary Demo screen-size : 425px";
+    
+}
+
+}
